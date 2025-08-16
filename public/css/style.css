@@ -83,7 +83,7 @@ body {
     gap: 12px;
     background: white;
     border: 2px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: 25px;
     padding: 12px;
     transition: border-color 0.2s;
 }
@@ -281,10 +281,26 @@ body {
 .chat-area::-webkit-scrollbar-track {
     background: transparent;
 }
-
 #messageInput {
     resize: none;
-    min-height: 20px;
+    min-height: 70px;
     max-height: 120px;
     line-height: 1.4;
+    padding: 12px 15px;
+}
+
+.char-counter {
+    font-size: 12px;
+    color: #9ca3af;
+    padding: 8px 12px;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+.char-counter.warning {
+    color: #f59e0b;
+}
+
+.char-counter.error {
+    color: #ef4444;
 }
