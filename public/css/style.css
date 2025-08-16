@@ -304,3 +304,101 @@ body {
 .char-counter.error {
     color: #ef4444;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        padding-bottom: 70px; /* отступ для логотипа */
+        box-sizing: border-box;
+    }
+
+    .container.expanded {
+        height: 100vh;
+        margin: 0;
+    }
+
+    .chat-area {
+        padding: 15px 10px;
+    }
+
+    .ai-message,
+    .user-message {
+        max-width: 85%;
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+
+    .input-area {
+        padding: 15px 10px 25px 10px;
+        margin-bottom: 50px; /* отступ от логотипа */
+    }
+
+    .input-wrapper {
+        padding: 8px 10px;
+        gap: 8px;
+    }
+
+    #messageInput {
+        font-size: 16px;
+        padding: 10px 12px;
+        min-height: 40px;
+    }
+
+    .char-counter {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    #sendButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .yes-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+ .logo {
+        font-size: 14px;
+    }
+    
+    /* Убираем отступ, так как логотип теперь поверх */
+    .input-area {
+        padding: 15px 10px;
+        margin-bottom: 60px; /* поднимаем над логотипом */
+    }
+    
+
+    .logo .emoji {
+        font-size: 20px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .ai-message,
+    .user-message {
+        max-width: 90%;
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+   .input-area {
+        padding: 10px 10px 20px 10px;
+        margin-bottom: 45px; /* отступ от логотипа */
+    }
+    .char-counter {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+}
